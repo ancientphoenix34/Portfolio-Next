@@ -2,7 +2,7 @@
 import React from 'react'
 
 import { TypeAnimation } from 'react-type-animation'
-import { Button } from '../ui/button'
+import { Button } from '../../ui/button'
 import { Download, FolderOpen } from 'lucide-react'
 
 const Hero = () => {
