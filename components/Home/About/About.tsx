@@ -10,13 +10,21 @@ const About = () => {
             <SectionHeading title_1='About' title_2='Me' description='Get to know the man behind solutions' />
             <div className='grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center'>
                 {/*Images*/}
-                <div className='relative'>
+                <div
+                    data-aos="fade-right"
+                    data-aos-delay="0"
+                    data-aos-anchor-placement="top-center"
+                    className='relative'>
                     <div className='aspect-square rounded-2xl overflow-hidden p-2'>
                         <Image src={"/images/user.jpg"} alt='Profile' width={700} height={700} className='w-full h-full object-center rounded-xl' />
                     </div>
                 </div>
                 {/*Content*/}
-                <div className='space-y-6'>
+                <div
+                    data-aos="fade-left"
+                    data-aos-delay="150"
+                    data-aos-anchor-placement="top-center"
+                    className='space-y-6'>
                     <h3 className='text-2xl font-semibold'>
                         A passionate developer who loves to create
                     </h3>
@@ -41,7 +49,11 @@ const About = () => {
             <div className='mt-16 w-[80%] mx-auto'>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 '>
                     {stats.map((stat) => {
-                        return <div key={stat.label} className='bg-white dark:bg-800 shadow rounded-xl p-6 text-center'>
+                        return <div
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
+                            data-aos-anchor-placement="top-center"
+                            key={stat.label} className='bg-white dark:bg-800 shadow rounded-xl p-6 text-center'>
                             <div className='text-3xl md:text-4xl font-bold text-purple-600 mb-2'>
                                 {stat.value}
                             </div>

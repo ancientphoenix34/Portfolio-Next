@@ -13,8 +13,7 @@ const Footer = () => {
                     </a>
                     <div className='flex items-center gap-4'>
                         {footerSocialLinks.map((link) => {
-                            return <a href={link.href} key={link.label} target='_blank' rel="noopener noreferrer" className='w-10 h-10 rounded-lg bg-white dark:bg-gray-800 shadow-md 
-            flex items-center justify-center text-muted-foreground hover:text-blue-500' transition-colors>
+                            return <a href={link.href} key={link.label} target='_blank' rel="noopener noreferrer" className='w-10 h-10 rounded-lg bg-white dark:bg-gray-800 shadow-md flex items-center justify-center text-muted-foreground hover:text-blue-500 transition-colors'>
                                 <link.icon className='w-5 h-5' />
                             </a>
                         })}
