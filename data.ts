@@ -3,7 +3,6 @@ import {
     Cloud,
     Code2,
     Coffee,
-    Cpu,
     Database,
     GitBranch,
     Globe,
@@ -17,21 +16,48 @@ import {
     Server,
     Smartphone,
     Terminal,
+    Braces,
+    Workflow,
+    Network,
+    Zap,
+    GitFork,
+    Send,
+    GitMerge,
+    UploadCloud,
+    ImageUp,
+    FileCode,
+    BrainCircuit,
+    MessageSquareCode,
+    BookOpen,
+    LayoutGrid,
+    GitGraph,
+    Cable,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
+export interface Certification {
+    id: number;
+    title: string;
+    issuer: string;
+    issuedDate: string;
+    expiryDate?: string;
+    credentialId?: string;
+    credentialUrl: string;
+    skills: string[];
+}
+
 export const stats = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Completed", value: "50+" },
-    { label: "Happy Clients", value: "30+" },
-    { label: "Students Taught", value: "1000+" },
+    { label: "Years Experience", value: "1+" },
+    { label: "Projects Completed", value: "Multiple" },
+    { label: "Technologies Mastered", value: "10+" },
+    { label: "AI & Automation Workflows", value: "5+" },
 ];
 
 export const highlights = [
-    { icon: MapPin, text: "Based in San Francisco, CA" },
+    { icon: MapPin, text: "Based in Kerala, INDIA" },
     { icon: Briefcase, text: "Open for freelance work" },
-    { icon: GraduationCap, text: "CS Graduate from Stanford" },
+    { icon: GraduationCap, text: "Master’s Graduate from KTU" },
     { icon: Coffee, text: "Powered by coffee & curiosity" },
 ];
 
@@ -74,19 +100,19 @@ export const contactInfo = [
     {
         icon: Mail,
         label: "Email",
-        value: "hello@johndoe.dev",
-        href: "mailto:hello@johndoe.dev",
+        value: "farseenkmohammed@gmail.com",
+        href: "mailto:farseenkmohammed@gmail.com",
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "+1 (555) 123-4567",
-        href: "tel:+15551234567",
+        value: "+91 8156996841",
+        href: "tel:8156996841",
     },
     {
         icon: MapPin,
         label: "Location",
-        value: "San Francisco, CA",
+        value: "Malappuram, Kerala",
         href: "#",
     },
 ];
@@ -99,49 +125,40 @@ export const socialLinks = [
 
 export const experiences = [
     {
-        type: "work",
-        title: "Senior Full-Stack Developer",
-        company: "TechCorp Inc.",
-        period: "2022 - Present",
+        type: "education",
+        title: "Bachelor of Computer Application(BCA)",
+        company: "Calicut University",
+        period: "2019 - 2022",
         description:
-            "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
-        technologies: ["React", "Node.js", "AWS", "TypeScript"],
-    },
-    {
-        type: "work",
-        title: "Full-Stack Developer",
-        company: "StartupXYZ",
-        period: "2020 - 2022",
-        description:
-            "Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.",
-        technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+            "Pursuing BCA under University of Calicut with a focus on software development, databases, web technologies, and programming fundamentals.",
+        technologies: ["Data Structures", "OOPs", "Web Development", "Computer Fundamentals"],
     },
     {
         type: "education",
-        title: "Master of Computer Science",
-        company: "Stanford University",
-        period: "2018 - 2020",
+        title: "Master of Computer Application(MCA)",
+        company: "APJ Abdul Kalam Technological University(KTU)",
+        period: "2022 - 2024",
         description:
-            "Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.",
-        technologies: ["Research", "AI/ML", "Distributed Systems"],
+            "Pursuing MCA with a focus on advanced software development, system design, AI technologies, and scalable application architecture.",
+        technologies: ["Advanced Programming", "System Design", "Artificial Intelligence", "Database Management", "Research & Innovation"],
     },
     {
         type: "work",
-        title: "Junior Developer",
-        company: "WebAgency Co.",
-        period: "2018 - 2020",
+        title: "MERN stack Intern",
+        company: "I-ROID Technologies",
+        period: "2024 May - 2024 Sept",
         description:
-            "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
+            "MERN Stack Intern focused on full-stack web development, RESTful APIs, database management, and scalable application development using modern JavaScript technologies.",
+        technologies: ["React", "Node", "Express", "MongoDB"],
+    },
+    {
+        type: "work",
+        title: "Jr Software Engieneer",
+        company: "Acqodis Technologies LLP",
+        period: "2025 Mar - 2026 Mar",
+        description:
+            "Developed client websites and e-com. Gained experience in agile methodologies.",
         technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
-    },
-    {
-        type: "education",
-        title: "Bachelor of Computer Science",
-        company: "UC Berkeley",
-        period: "2014 - 2018",
-        description:
-            "Strong foundation in algorithms, data structures, and software engineering principles.",
-        technologies: ["Computer Science", "Mathematics", "Problem Solving"],
     },
 ];
 
@@ -154,58 +171,59 @@ export const footerSocialLinks = [
 
 export const projects = [
     {
-        title: "E-Commerce Platform",
-        description:
-            "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-        image: "/images/p1.jpg",
-        techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        title: "Fit Club",
+        description: "A React fitness club site with animated stats, membership plans, and email-integrated contact option.",
+        image: "/images/FitClub.png",
+        techStack: ["HTML", "React", "CSS"],
+        demoUrl: "https://fit-club-frontend.onrender.com",
+        githubUrl: "https://github.com/ancientphoenix34/Fit-Club-Frontend",
     },
     {
-        title: "Task Management App",
+        title: "Blog Application",
         description:
             "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
-        image: "/images/p2.jpg",
-        techStack: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        image: "/images/Blog.png",
+        techStack: ["React", "Node.js", "Express", "MongoDB"],
+        demoUrl: "https://blog-front-arxn.onrender.com",
+        githubUrl: "https://github.com/ancientphoenix34/Blog",
     },
     {
-        title: "AI Content Generator",
+        title: "Job Application Tracker",
         description:
             "GPT-powered content creation platform for marketers with templates and workflow automation.",
-        image: "/images/p3.jpg",
-        techStack: ["React", "Python", "OpenAI", "FastAPI"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        image: "/images/Job_Appln.png",
+        techStack: ["Next", "Python", "OpenAI", "FastAPI"],
+        demoUrl: "https://job-application-tracker-315t.onrender.com/",
+        githubUrl: "https://github.com/ancientphoenix34/Job-Application-Tracker",
     },
     {
-        title: "Real Estate Platform",
+        title: "Recruiter mail notifier",
         description:
-            "Property listing platform with virtual tours, mortgage calculator, and agent booking system.",
-        image: "/images/p4.jpg",
-        techStack: ["Vue.js", "Node.js", "MongoDB", "Maps API"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+            "GPT-powered content creation platform for marketers with templates and workflow automation.",
+        image: "/images/mail-auto.png",
+        techStack: ["n8n", "Automation", "OpenAI"],
+        githubUrl: "https://github.com/ancientphoenix34/n8n-Recruiter-Notifier",
+    },
+];
+
+export const certifications: Certification[] = [
+    {
+        id: 1,
+        title: "System Design Masterclass (2026) | From FAANG Insiders",
+        issuer: "UDEMY",
+        issuedDate: "May 2026",
+        credentialId: "UC-cf56d32f-ba6a-48c9-acbd-b9167c1d0293",
+        credentialUrl: "https://www.udemy.com/certificate/UC-cf56d32f-ba6a-48c9-acbd-b9167c1d0293/",
+        skills: ["System Design", "Scalability", "API Design", "Microservices", "LLD", "HLD"],
     },
     {
-        title: "Fitness Tracker",
-        description:
-            "Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.",
-        image: "/images/p5.jpg",
-        techStack: ["React Native", "Firebase", "Node.js", "Charts"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
-    },
-    {
-        title: "Learning Management System",
-        description:
-            "Educational platform with video streaming, quizzes, progress tracking, and certificates.",
-        image: "/images/p6.jpg",
-        techStack: ["Next.js", "Prisma", "AWS S3", "Stripe"],
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        id: 2,
+        title: "LLM Engineering, RAG, & AI Agents Masterclass [2026]",
+        issuer: "Udemy",
+        issuedDate: "May 2026",
+        credentialId: "UC-cac866f0-1692-418e-91ae-ead73a082560",
+        credentialUrl: "https://www.udemy.com/certificate/UC-cac866f0-1692-418e-91ae-ead73a082560/",
+        skills: ["LLM", "RAG", "LangChain", "Vector Databases", "LangGraph", "Multimodal Systems", "n8n"],
     },
 ];
 
@@ -213,12 +231,11 @@ export const skillCategories = [
     {
         title: "Frontend",
         skills: [
+            { name: "JavaScript", icon: Braces },
             { name: "React", icon: Code2 },
             { name: "Next.js", icon: Globe },
             { name: "TypeScript", icon: Terminal },
             { name: "Tailwind CSS", icon: Palette },
-            { name: "React Native", icon: Smartphone },
-            { name: "Vue.js", icon: Layout },
         ],
     },
     {
@@ -228,19 +245,33 @@ export const skillCategories = [
             { name: "Express", icon: Layers },
             { name: "MongoDB", icon: Database },
             { name: "PostgreSQL", icon: Database },
-            { name: "GraphQL", icon: Cpu },
             { name: "REST APIs", icon: Cloud },
+            { name: "MVC", icon: Workflow },
+            { name: "Micro Services", icon: Network },
+            { name: "Fast API", icon: Zap },
+        ],
+    },
+    {
+        title: "AI & Automation",
+        skills: [
+            { name: "Python", icon: FileCode },
+            { name: "LLM API Integration", icon: BrainCircuit },
+            { name: "Prompt Engineering", icon: MessageSquareCode },
+            { name: "(RAG)", icon: BookOpen },
+            { name: "Vector Databases", icon: LayoutGrid },
+            { name: "LangGraph", icon: GitGraph },
+            { name: "n8n", icon: Cable },
         ],
     },
     {
         title: "Tools & Others",
         skills: [
             { name: "Git", icon: GitBranch },
-            { name: "Docker", icon: Server },
-            { name: "AWS", icon: Cloud },
-            { name: "Linux", icon: Terminal },
-            { name: "Figma", icon: Palette },
-            { name: "CI/CD", icon: Cpu },
+            { name: "GitHub", icon: GitFork },
+            { name: "Postman", icon: Send },
+            { name: "CI/CD Pipelines", icon: GitMerge },
+            { name: "Render Deployment", icon: UploadCloud },
+            { name: "Cloudinary", icon: ImageUp },
         ],
     },
 ];

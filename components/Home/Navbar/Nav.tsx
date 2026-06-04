@@ -28,7 +28,7 @@ const Nav = ({ openNav }: Props) => {
                 {/*LOGO*/}
                 <Logo />
                 {/*Navlinks*/}
-                <div className='hidden lg:flex items-center space-x-10'>
+                <div className='hidden lg:flex items-center space-x-6'>
                     {Navlinks.map((link, index) => {
                         return <Link key={index} href={link.href} className='dark:text-white text-black hover:text-yellow-500 dark:hover:text-yellow-200 font-semibold transition-all duration-200'>
                             <p>{link.name}</p>
@@ -37,7 +37,7 @@ const Nav = ({ openNav }: Props) => {
                 </div>
                 {/*buttons*/}
                 <div className='flex items-center space-x-4'>
-                    <a href="#" className='box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white
+                    <a href="/Mohammed_Farseen_K_Resume.pdf" download="Mohammed_Farseen_K_Resume.pdf" className='box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white
                     transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none'>
                         <span className='relative z-20 flex items-center space-x-2 text-sm'>
 

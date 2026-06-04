@@ -126,5 +126,10 @@
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
   }
+}
+
+#home, #about, #skills, #projects, #experience, #certifications, #contact {
+  scroll-margin-top: 12vh;
 }

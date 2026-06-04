@@ -5,7 +5,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='py-16 bg-gray-100 dark:bg-gray-900'>
+        <div id="about" className='py-16 bg-gray-100 dark:bg-gray-900'>
             {/* section heading*/}
             <SectionHeading title_1='About' title_2='Me' description='Get to know the man behind solutions' />
             <div className='grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center'>
@@ -16,7 +16,7 @@ const About = () => {
                     data-aos-anchor-placement="top-center"
                     className='relative'>
                     <div className='aspect-square rounded-2xl overflow-hidden p-2'>
-                        <Image src={"/images/user.jpg"} alt='Profile' width={700} height={700} className='w-full h-full object-center rounded-xl' />
+                        <Image src={"/images/Farseen.jpeg"} alt='Profile' width={700} height={700} className='w-full h-full object-center rounded-xl' />
                     </div>
                 </div>
                 {/*Content*/}
@@ -29,9 +29,9 @@ const About = () => {
                         A passionate developer who loves to create
                     </h3>
                     <p className='text-muted-foreground leading-relaxed'>
-                        I'm a full-stack developer with over 5 years of experience building web applications. My journey started with curiosity about how websites work, and it has evolved into a passion for creating seamless, user-focused digital experiences.
+                       I'm a passionate full-stack developer building scalable, user-friendly web applications and modern digital experiences. I specialize in MERN Stack, Next.js, Node.js, React, and REST APIs, with hands-on experience in SaaS platforms, authentication systems, automation workflows, and AI-powered applications. I enjoy solving real-world problems through clean architecture, efficient APIs, and intuitive user experiences.
                     </p>
-                    <p className='text-muted-foreground leading-relaxed'>Beyond coding, I'm dedicated to sharing knowledge. I've taught over 1000 students through online courses and mentorship programs. I believe in continuous learning and staying updated with the latest technologies.</p>
+                    <p className='text-muted-foreground leading-relaxed'>Beyond development, I'm committed to continuous learning, exploring system design, automation engineering, and modern software practices. I also enjoy sharing knowledge, contributing to projects, and staying updated with the latest trends in technology and software engineering.</p>
                     {/*Highligths*/}
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4'>
                         {highlights.map((item) => {
