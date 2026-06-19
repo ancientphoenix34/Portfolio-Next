@@ -181,7 +181,7 @@ export const projects = [
     {
         title: "Blog Application",
         description:
-            "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
+            "A smart blogging platform for creating, publishing, and managing content with AI-enhanced features.",
         image: "/images/Blog.png",
         techStack: ["React", "Node.js", "Express", "MongoDB"],
         demoUrl: "https://blog-front-arxn.onrender.com",
@@ -190,16 +190,16 @@ export const projects = [
     {
         title: "Job Application Tracker",
         description:
-            "GPT-powered content creation platform for marketers with templates and workflow automation.",
+            "Track and manage job applications with AI-driven insights",
         image: "/images/Job_Appln.png",
         techStack: ["Next", "Python", "OpenAI", "FastAPI"],
-        demoUrl: "https://job-application-tracker-315t.onrender.com/",
+        demoUrl: "https://job-application-tracker-five-green.vercel.app/",
         githubUrl: "https://github.com/ancientphoenix34/Job-Application-Tracker",
     },
     {
         title: "Recruiter mail notifier",
         description:
-            "GPT-powered content creation platform for marketers with templates and workflow automation.",
+            "Automate email processing, tracking, and responses with AI.",
         image: "/images/mail-auto.png",
         techStack: ["n8n", "Automation", "OpenAI"],
         githubUrl: "https://github.com/ancientphoenix34/n8n-Recruiter-Notifier",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
@@ -33,6 +34,7 @@ export default function RootLayout({
         <ChatWidget/>
         <ScrollToTop/>
         </Provider>
+        <Toaster position="top-center" richColors />
         </body>
     </html>
   );

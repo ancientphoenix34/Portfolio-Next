@@ -64,7 +64,7 @@ const Hero = () => {
                         </a>
                     </Button>
                     <Button size={"lg"} asChild className='w-fit mx-auto sm:mx-0'>
-                        <a href="/Mohammed_Farseen_K_Resume.pdf" download="Mohammed_Farseen_K_Resume.pdf">
+                        <a href="/Mohammed_Farseen_K_Res.pdf" download="Mohammed_Farseen_K_Res.pdf">
                             <Download className='w-5 h-5 mr-2' />
                             Download CV
                         </a>
