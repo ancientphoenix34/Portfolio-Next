@@ -192,9 +192,18 @@ export const projects = [
         description:
             "Track and manage job applications with AI-driven insights",
         image: "/images/Job_Appln.png",
-        techStack: ["Next", "Python", "OpenAI", "FastAPI"],
+        techStack: ["Next", "Typescript", "OpenAI", "FastAPI"],
         demoUrl: "https://job-application-tracker-five-green.vercel.app/",
         githubUrl: "https://github.com/ancientphoenix34/Job-Application-Tracker",
+    },
+    {
+      title: "Spoken Books",
+        description:
+            "Turn any book PDF into a real-time AI voice conversation",
+        image: "/images/Spoken_books.png",
+        techStack: ["Next", "Clerk", "Vapi", "MongoDB"],
+        demoUrl: "https://spoken-pages-five.vercel.app/",
+        githubUrl: "https://github.com/ancientphoenix34/Spoken-Pages",   
     },
     {
         title: "Recruiter mail notifier",
