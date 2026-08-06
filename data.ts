@@ -225,7 +225,7 @@ export const projects: Project[] = [
         image: "/images/Muo-lingo.png",
         techStack: ["React Native", "Clerk", "OpenAI", "Stream"],
         githubUrl: "https://github.com/ancientphoenix34/Duo-Lingo-mobile",
-        demoUrl: "https://appetize.io/app/b_o24oxgctxvfrygptthqvztgvtm",
+        demoUrl: "https://appetize.io/app/b_grxtspm6d3hkegxqypppqxzpvq",
         demoVideo: "/videos/muo-lingo-demo.mp4",
         demoNotice:
             "Heads up: the AI service runs on Railway's free tier and may have expired. You can still browse the app, but AI features won't respond. Watch the demo video to see it working.",
