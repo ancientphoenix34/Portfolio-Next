@@ -36,6 +36,19 @@ import {
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
+export interface Project {
+    title: string;
+    description: string;
+    image: string;
+    techStack: string[];
+    demoUrl?: string;
+    githubUrl?: string;
+    /** Public path to a demo recording, e.g. "/videos/muo-lingo-demo.mp4" */
+    demoVideo?: string;
+    /** Warning shown as a toast before the live demo opens. Omit for no toast. */
+    demoNotice?: string;
+}
+
 export interface Certification {
     id: number;
     title: string;
@@ -157,8 +170,8 @@ export const experiences = [
         company: "Acqodis Technologies LLP",
         period: "2025 Mar - 2026 Mar",
         description:
-            "Developed client websites and e-com. Gained experience in agile methodologies.",
-        technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
+            "Developed client web applications, Gained experience in agile methodologies.",
+        technologies: ["React", "Node", "express", "MySQL",],
     },
 ];
 
@@ -169,7 +182,7 @@ export const footerSocialLinks = [
     { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
 ];
 
-export const projects = [
+export const projects: Project[] = [
     {
         title: "Fit Club",
         description: "A React fitness club site with animated stats, membership plans, and email-integrated contact option.",
@@ -197,14 +210,27 @@ export const projects = [
         githubUrl: "https://github.com/ancientphoenix34/Job-Application-Tracker",
     },
     {
-      title: "Spoken Books",
+        title: "Spoken Books",
         description:
             "Turn any book PDF into a real-time AI voice conversation",
         image: "/images/Spoken_books.png",
         techStack: ["Next", "Clerk", "Vapi", "MongoDB"],
         demoUrl: "https://spoken-pages-five.vercel.app/",
-        githubUrl: "https://github.com/ancientphoenix34/Spoken-Pages",   
+        githubUrl: "https://github.com/ancientphoenix34/Spoken-Pages",
     },
+    {
+        title: "Muo-lingo",
+        description:
+            "Gamified language learning powered by AI teachers you can talk to.",
+        image: "/images/Muo-lingo.png",
+        techStack: ["React Native", "Clerk", "OpenAI", "Stream"],
+        githubUrl: "https://github.com/ancientphoenix34/Duo-Lingo-mobile",
+        demoUrl: "https://appetize.io/app/b_o24oxgctxvfrygptthqvztgvtm",
+        demoVideo: "/videos/muo-lingo-demo.mp4",
+        demoNotice:
+            "Heads up: the AI service runs on Railway's free tier and may have expired. You can still browse the app, but AI features won't respond. Watch the demo video to see it working.",
+    },
+
     {
         title: "Recruiter mail notifier",
         description:

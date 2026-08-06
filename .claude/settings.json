@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const p=require\\('./node_modules/radix-ui/package.json'\\); console.log\\(p.version\\); console.log\\(Object.keys\\(p.dependencies||{}\\).filter\\(d=>/dialog|remove-scroll|focus/i.test\\(d\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3987 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; \"stopped\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/tailwindcss/package.json'\\).version\\)\")",
+      "Bash(mkdir -p .tw-probe)",
+      "Bash(npx @tailwindcss/cli -i .tw-probe/in.css -o .tw-probe/out.css --content .tw-probe/probe.html)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application//**)",
+      "Bash(curl -s http://localhost:3987)",
+      "Bash(curl -s -o /dev/null -w \"probe:%{http_code}\\\\n\" http://localhost:3000/probe)",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0i1-lb3._.css\")",
+      "Bash(curl -s http://localhost:3000/probe)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=390,900 --virtual-time-budget=8000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/w-390.png http://localhost:3000/probe)",
+      "Bash(node -e 'const b=require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/w-390.png'\\\\''\\);console.log\\('\\\\''png'\\\\'',b.readUInt32BE\\(16\\)+'\\\\''x'\\\\''+b.readUInt32BE\\(20\\)\\)')",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1500,1100 --virtual-time-budget=9000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/widths.png http://localhost:3000/probe)",
+      "Bash(node -e 'const b=require\\('\\\\''fs'\\\\''\\).readFileSync\\('\\\\''C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/widths.png'\\\\''\\);console.log\\('\\\\''png'\\\\'',b.readUInt32BE\\(16\\)+'\\\\''x'\\\\''+b.readUInt32BE\\(20\\)\\)')",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1280,900 --virtual-time-budget=12000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/modal-desktop.png http://localhost:3000/probe)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=600,760 --virtual-time-budget=12000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/modal-narrow.png http://localhost:3000/probe)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1280,900 --virtual-time-budget=12000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/m2-desktop.png http://localhost:3000/probe)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=560,740 --virtual-time-budget=12000 --screenshot=C:/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-MY-WORKS-portfolio/a49f00b8-896e-4e38-82eb-8ff5b571ccd5/scratchpad/m2-narrow.png http://localhost:3000/probe)",
+      "Bash(rm -rf app/probe)",
+      "Bash(echo \"tsc exit: $?\")",
+      "Bash(npx eslint *)",
+      "Bash(npx next *)"
+    ]
+  }
+}
